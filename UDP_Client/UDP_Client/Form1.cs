@@ -30,10 +30,17 @@ namespace UDP_Client
             byte[] data = new byte[1000 * 1000];
             data = newsock.Receive(ref iPEndPoint); // ref : 변수에 대한 참조를 전달하는 기능
 
-            File.WriteAllBytes("J://Image.jpg", data); // 클라이언트에서 전송한 이미지를 J드라이브 img라는 이름의 jpg로 저장
+            //File.WriteAllBytes("J://Image.jpg", data); // 클라이언트에서 전송한 이미지를 J드라이브 img라는 이름의 jpg로 저장
 
-            label1.Text = "수신 대기중";
+            pictureBox1.Image = byteArrayToImage(data) // Client에 받은 데이터를 이미지로 변환해 PictureBox에 담는 코드 설정
 
+        }
+        private Image byteArrayToImage(byte[] data)
+        {
+           //byte->이미지로 변환하는 코딩
+           MemoryStream ms = new MemoryStream(data)
+           Image returnImage = Image.FromStream(ms);
+           return returnImage;
         }
     }
 }
