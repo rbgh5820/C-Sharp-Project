@@ -41,7 +41,7 @@ namespace UDP_server
 
         private byte[] imgToByteArray(Image img)
         {
-            // 이미지를 바이트 배열로 전환
+            // 이미지를 바이트 배열로 전환하는 코드
            using(MemoryStream mStream = new MemoryStream())
             {
                 return mStream.ToArray();
