@@ -1,0 +1,10 @@
+C:\Users\kimkyuho\source\repos\ByteArray2\ByteArray2\obj\Debug\ByteArray2.csproj.AssemblyReference.cache
+C:\Users\kimkyuho\source\repos\ByteArray2\ByteArray2\obj\Debug\ByteArray2.Form1.resources
+C:\Users\kimkyuho\source\repos\ByteArray2\ByteArray2\obj\Debug\ByteArray2.Properties.Resources.resources
+C:\Users\kimkyuho\source\repos\ByteArray2\ByteArray2\obj\Debug\ByteArray2.csproj.GenerateResource.cache
+C:\Users\kimkyuho\source\repos\ByteArray2\ByteArray2\obj\Debug\ByteArray2.csproj.CoreCompileInputs.cache
+C:\Users\kimkyuho\source\repos\ByteArray2\ByteArray2\bin\Debug\ByteArray2.exe.config
+C:\Users\kimkyuho\source\repos\ByteArray2\ByteArray2\bin\Debug\ByteArray2.exe
+C:\Users\kimkyuho\source\repos\ByteArray2\ByteArray2\bin\Debug\ByteArray2.pdb
+C:\Users\kimkyuho\source\repos\ByteArray2\ByteArray2\obj\Debug\ByteArray2.exe
+C:\Users\kimkyuho\source\repos\ByteArray2\ByteArray2\obj\Debug\ByteArray2.pdb
