@@ -1,0 +1,15 @@
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\bin\Debug\netcoreapp3.1\TCPserver.exe
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\bin\Debug\netcoreapp3.1\TCPserver.deps.json
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\bin\Debug\netcoreapp3.1\TCPserver.runtimeconfig.json
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\bin\Debug\netcoreapp3.1\TCPserver.runtimeconfig.dev.json
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\bin\Debug\netcoreapp3.1\TCPserver.dll
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\bin\Debug\netcoreapp3.1\TCPserver.pdb
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\obj\Debug\netcoreapp3.1\TCPserver.csproj.AssemblyReference.cache
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\obj\Debug\netcoreapp3.1\TCPserver.Form1.resources
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\obj\Debug\netcoreapp3.1\TCPserver.csproj.GenerateResource.cache
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\obj\Debug\netcoreapp3.1\TCPserver.AssemblyInfoInputs.cache
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\obj\Debug\netcoreapp3.1\TCPserver.AssemblyInfo.cs
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\obj\Debug\netcoreapp3.1\TCPserver.csproj.CoreCompileInputs.cache
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\obj\Debug\netcoreapp3.1\TCPserver.dll
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\obj\Debug\netcoreapp3.1\TCPserver.pdb
+C:\Users\kimkyuho\source\repos\TCPserver\TCPserver\obj\Debug\netcoreapp3.1\TCPserver.genruntimeconfig.cache
