@@ -36,7 +36,7 @@ namespace UDP_server
             data = File.ReadAllBytes("c://test//cat.jpg");
             server.Send(data, data.Length); // 배열에 있는 데이터를 서버에 전송한다.
 
-            label1.Text = "파일을 전송했습니다.";
+            //label1.Text = "파일을 전송했습니다.";
         }
 
         private byte[] imgToByteArray(Image img)
