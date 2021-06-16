@@ -1,0 +1,15 @@
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\bin\Debug\netcoreapp3.1\EXEprogram.exe
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\bin\Debug\netcoreapp3.1\EXEprogram.deps.json
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\bin\Debug\netcoreapp3.1\EXEprogram.runtimeconfig.json
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\bin\Debug\netcoreapp3.1\EXEprogram.runtimeconfig.dev.json
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\bin\Debug\netcoreapp3.1\EXEprogram.dll
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\bin\Debug\netcoreapp3.1\EXEprogram.pdb
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\obj\Debug\netcoreapp3.1\EXEprogram.csproj.AssemblyReference.cache
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\obj\Debug\netcoreapp3.1\EXEprogram.Form1.resources
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\obj\Debug\netcoreapp3.1\EXEprogram.csproj.GenerateResource.cache
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\obj\Debug\netcoreapp3.1\EXEprogram.AssemblyInfoInputs.cache
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\obj\Debug\netcoreapp3.1\EXEprogram.AssemblyInfo.cs
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\obj\Debug\netcoreapp3.1\EXEprogram.csproj.CoreCompileInputs.cache
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\obj\Debug\netcoreapp3.1\EXEprogram.dll
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\obj\Debug\netcoreapp3.1\EXEprogram.pdb
+C:\Users\kimkyuho\source\repos\EXEprogram\EXEprogram\obj\Debug\netcoreapp3.1\EXEprogram.genruntimeconfig.cache
