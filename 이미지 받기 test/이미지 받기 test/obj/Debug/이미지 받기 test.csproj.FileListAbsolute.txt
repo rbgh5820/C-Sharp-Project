@@ -1,0 +1,10 @@
+C:\Users\kimkyuho\source\repos\이미지 받기 test\이미지 받기 test\obj\Debug\이미지 받기 test.csproj.AssemblyReference.cache
+C:\Users\kimkyuho\source\repos\이미지 받기 test\이미지 받기 test\obj\Debug\이미지_받기_test.Form1.resources
+C:\Users\kimkyuho\source\repos\이미지 받기 test\이미지 받기 test\obj\Debug\이미지_받기_test.Properties.Resources.resources
+C:\Users\kimkyuho\source\repos\이미지 받기 test\이미지 받기 test\obj\Debug\이미지 받기 test.csproj.GenerateResource.cache
+C:\Users\kimkyuho\source\repos\이미지 받기 test\이미지 받기 test\obj\Debug\이미지 받기 test.csproj.CoreCompileInputs.cache
+C:\Users\kimkyuho\source\repos\이미지 받기 test\이미지 받기 test\bin\Debug\이미지 받기 test.exe.config
+C:\Users\kimkyuho\source\repos\이미지 받기 test\이미지 받기 test\bin\Debug\이미지 받기 test.exe
+C:\Users\kimkyuho\source\repos\이미지 받기 test\이미지 받기 test\bin\Debug\이미지 받기 test.pdb
+C:\Users\kimkyuho\source\repos\이미지 받기 test\이미지 받기 test\obj\Debug\이미지 받기 test.exe
+C:\Users\kimkyuho\source\repos\이미지 받기 test\이미지 받기 test\obj\Debug\이미지 받기 test.pdb
