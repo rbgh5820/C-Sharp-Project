@@ -1,0 +1,10 @@
+C:\Users\kimkyuho\source\repos\이미지_보내기\이미지_보내기\bin\Debug\이미지_보내기.exe.config
+C:\Users\kimkyuho\source\repos\이미지_보내기\이미지_보내기\bin\Debug\이미지_보내기.exe
+C:\Users\kimkyuho\source\repos\이미지_보내기\이미지_보내기\bin\Debug\이미지_보내기.pdb
+C:\Users\kimkyuho\source\repos\이미지_보내기\이미지_보내기\obj\Debug\이미지_보내기.csproj.AssemblyReference.cache
+C:\Users\kimkyuho\source\repos\이미지_보내기\이미지_보내기\obj\Debug\이미지_보내기.Form1.resources
+C:\Users\kimkyuho\source\repos\이미지_보내기\이미지_보내기\obj\Debug\이미지_보내기.Properties.Resources.resources
+C:\Users\kimkyuho\source\repos\이미지_보내기\이미지_보내기\obj\Debug\이미지_보내기.csproj.GenerateResource.cache
+C:\Users\kimkyuho\source\repos\이미지_보내기\이미지_보내기\obj\Debug\이미지_보내기.csproj.CoreCompileInputs.cache
+C:\Users\kimkyuho\source\repos\이미지_보내기\이미지_보내기\obj\Debug\이미지_보내기.exe
+C:\Users\kimkyuho\source\repos\이미지_보내기\이미지_보내기\obj\Debug\이미지_보내기.pdb

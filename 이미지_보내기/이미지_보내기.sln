@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "이미지_보내기", "이미지_보내기\이미지_보내기.csproj", "{6E9F6F1B-03BF-488D-9200-D6EDE35FC6BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E9F6F1B-03BF-488D-9200-D6EDE35FC6BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9F6F1B-03BF-488D-9200-D6EDE35FC6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9F6F1B-03BF-488D-9200-D6EDE35FC6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9F6F1B-03BF-488D-9200-D6EDE35FC6BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D21EBE49-6891-47E6-B9F8-FCBFDB4360DC}
+	EndGlobalSection
+EndGlobal
