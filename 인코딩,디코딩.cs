@@ -30,54 +30,39 @@ namespace Image_en_decoing
 
         private unsafe void button1_Click(object sender, EventArgs e)
         {
-            /*Image img = Image.FromFile("C://test//cat.jpg");
-            pictureBox1.Image = img;
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            byte[] picture = ImgToByteArray(pictureBox1.Image);*/
-
-            
-
-            SetupLogging();
-
             EncodeAllFrameImage();
             label1.Text = "인코딩 완료";
         }
 
-        private byte[] ImgToByteArray(Image image)
+        private unsafe void EncodeAllFrameImage()
         {
-            using (MemoryStream ms = new MemoryStream())
-            {
-                image.Save(ms, image.RawFormat);
-                return ms.ToArray();
-            }
-        }
+            string frameFiles = "C://test//cat.jpg";// 파일 이름을 검색하여 framFiles에 담는다.
+            Image firstFrameImage = Image.FromFile(frameFiles); // frameFiles의 첫번째로 검색된 파일을 이미지로 저장한다.
+            byte[] picture = ImgToByteArray(firstFrameImage); // 이미지를 byte배열로 변환한다.
+            pictureBox1.Image = firstFrameImage;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
-        private static unsafe void EncodeAllFrameImage()
-        {
-            string[] frameFiles = Directory.GetFiles(".", "frame.*.jpg").OrderBy(x => x).ToArray();// 파일 이름을 검색하여 framFiles에 담는다.
-            Image firstFrameImage = Image.FromFile(frameFiles.First()); // frameFiles의 첫번째로 검색된 파일을 이미지로 저장한다.
-            /*string frameFiles = "C://test//cat.jpg";
-            Image firstFrameImage = Image.FromFile(frameFiles);*/ // framFiles의 이미지 파일을 저장
-
+            /*Image frameFiles = Image.FromFile("C://test//cat.jpg");*/
+            /*Image firstFrameImage = Image.FromFile(frameFiles);*/ // framFiles의 이미지 파일을 저장;
 
             string outputFileName = "out.h263"; // 인코딩할 파일 이름
             int fps = 25; // fps 변수값 초기화
             var sourceSize = firstFrameImage.Size;
             var sourcePixelFormat = AVPixelFormat.AV_PIX_FMT_BGR24; // PixelFormat : 이미지의 각 픽셀에 대한 색 데이터의 형식을 지정
-            var destinationSize = new Size(352,288); // h263 cif 사이즈
+            var destinationSize = new Size(352,288); // h263 cif 사이즈(352,288)
             var destinationPixelFormat = AVPixelFormat.AV_PIX_FMT_YUV420P;
             using (VideoFrameConverter vfc = new VideoFrameConverter(sourceSize, sourcePixelFormat, destinationSize, destinationPixelFormat))
             {
                 using (FileStream fs = File.Open(outputFileName, FileMode.Create)) // be advise only ffmpeg based player (like ffplay or vlc) can play this file, for the others you need to go through muxing
                 {
-                    using (H264VideoStreamEncoder vse = new H264VideoStreamEncoder(fs, fps, destinationSize))
+                    using (H263VideoStreamEncoder vse = new H263VideoStreamEncoder(fs, fps, destinationSize))
                     {
                         int frameNumber = 0;
-                        foreach (string frameFile in frameFiles)
+                        if(firstFrameImage !=null)
                         {
                             byte[] bitmapData;
 
-                            using (Image frameImage = Image.FromFile(frameFile))
+                            using(Image frameImage = Image.FromFile(frameFiles))
                             using (Bitmap frameBitmap = frameImage is Bitmap bitmap ? bitmap : new Bitmap(frameImage))
                             {
                                 bitmapData = GetBitmap(frameBitmap);
@@ -100,10 +85,19 @@ namespace Image_en_decoing
                             Console.WriteLine($"frame :{frameNumber}");
                             frameNumber++;
                             log.Debug("frame : " + frameNumber);
-                            if (frameNumber > 1000) break;
+                            /*if (frameNumber > 1600) break;*/
                         }
                     }
                 }
+            }
+        }
+
+        private byte[] ImgToByteArray(Image image)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                image.Save(ms, image.RawFormat);
+                return ms.ToArray();
             }
         }
 
@@ -151,10 +145,13 @@ namespace Image_en_decoing
             label2.Text = "디코딩 완료";
         }
 
-        private static unsafe void DecodeAllFrameToImage()
+        private unsafe void DecodeAllFrameToImage()
         {
-            string File = "video.mpeg"; // be advised this file holds 1440 frames
-            using (VideoStreamDecoder vsd = new VideoStreamDecoder(File)) // using범위를 벗어나면 dispose를 쓰는것과 같다.
+            string Decode = "out.h263";
+            byte[] Data = StringToByteArray(Decode);
+            pictureBox2.Image = Image.FromFile("C://test//cat.jpg");
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            using (VideoStreamDecoder vsd = new VideoStreamDecoder(Decode)) // using범위를 벗어나면 dispose를 쓰는것과 같다.
             {
                 Console.WriteLine($"codec name: {vsd.CodecName}");
 
@@ -163,7 +160,7 @@ namespace Image_en_decoing
 
                 var sourceSize = vsd.FrameSize;
                 var sourcePixelFormat = vsd.PixelFormat;
-                var destinationSize = sourceSize;
+                var destinationSize = new Size(1920, 1280);
                 var destinationPixelFormat = AVPixelFormat.AV_PIX_FMT_BGR24;
                 using (VideoFrameConverter vfc = new VideoFrameConverter(sourceSize, sourcePixelFormat, destinationSize, destinationPixelFormat))
                 {
@@ -176,18 +173,24 @@ namespace Image_en_decoing
                             bitmap.Save($"file.{frameNumber:D8}.jpg", ImageFormat.Jpeg);
 
                         Console.WriteLine($"frame: {frameNumber}");
+                        log.Debug("Decode Image : " + frameNumber);
                         frameNumber++;
                     }
                 }
             }
         }
 
+        private byte[] StringToByteArray(string decode)
+        {
+            byte[] StrByte = Encoding.UTF8.GetBytes(decode);
+            return StrByte;
+        }
+        // 콤보박스 선택하면 해당코덱으로 인,디코딩 진행
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             /*Object selectedItem = comboBox1.SelectedItem;*/
             if(comboBox1.SelectedItem.ToString() == "H263Encode")
             {
-
                 Encode_H263();
                 Decode_H263();
             }
