@@ -1,0 +1,10 @@
+C:\Users\kimkyuho\source\repos\Recoder\Recoder\bin\Debug\Recoder.exe.config
+C:\Users\kimkyuho\source\repos\Recoder\Recoder\bin\Debug\Recoder.exe
+C:\Users\kimkyuho\source\repos\Recoder\Recoder\bin\Debug\Recoder.pdb
+C:\Users\kimkyuho\source\repos\Recoder\Recoder\obj\Debug\Recoder.csproj.AssemblyReference.cache
+C:\Users\kimkyuho\source\repos\Recoder\Recoder\obj\Debug\Recoder.Form1.resources
+C:\Users\kimkyuho\source\repos\Recoder\Recoder\obj\Debug\Recoder.Properties.Resources.resources
+C:\Users\kimkyuho\source\repos\Recoder\Recoder\obj\Debug\Recoder.csproj.GenerateResource.cache
+C:\Users\kimkyuho\source\repos\Recoder\Recoder\obj\Debug\Recoder.csproj.CoreCompileInputs.cache
+C:\Users\kimkyuho\source\repos\Recoder\Recoder\obj\Debug\Recoder.exe
+C:\Users\kimkyuho\source\repos\Recoder\Recoder\obj\Debug\Recoder.pdb
