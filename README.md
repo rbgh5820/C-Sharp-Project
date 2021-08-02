@@ -5,3 +5,4 @@
 3. DB연동(windowsForm)
 4. OpenCV 웹캠 + UDP 소켓 송,수신
 5. TCP 소켓 송,수신
+6. 음성 다루기(진행중)
