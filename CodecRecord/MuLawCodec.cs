@@ -14,7 +14,7 @@ namespace Recoder
         /// </summary>
         public byte[] Encode(byte[] data, int offset, int length)
         {
-            var encoded = new byte[length / 2];
+            byte[] encoded = new byte[length / 2];
             int outIndex = 0;
             for (int n = 0; n < length; n += 2)
             {
@@ -24,7 +24,7 @@ namespace Recoder
         }
         public byte[] Decode(byte[] data, int offset, int length)
         {
-            var decoded = new byte[length * 2];
+            byte[] decoded = new byte[length * 2];
             int outIndex = 0;
             for (int n = 0; n < length; n++)
             {
