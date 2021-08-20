@@ -10,7 +10,7 @@ namespace Recoder
     class ALawCodec
     {
         /// <summary>
-        /// A-Law 코덱
+        /// A-Law 코덱 인, 디코드
         /// </summary>
         /// <returns></returns>
         public byte[] Encode(byte[] data, int offset, int length)
