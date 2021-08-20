@@ -36,8 +36,8 @@ namespace Recoder
                 throw new ArgumentException("G722 does not yet support non-zero offsets");
             }
             int decodedLength = length * 2;
-            var outputBuffer = new byte[decodedLength];
-            var wb = new WaveBuffer(outputBuffer);
+            byte[] outputBuffer = new byte[decodedLength];
+            WaveBuffer wb = new WaveBuffer(outputBuffer);
             int decoded = codec.Decode(encoderState, wb.ShortBuffer, data, length);
             return outputBuffer;
         }
